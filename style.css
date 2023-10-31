@@ -2,6 +2,21 @@
 
 
 body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+body {
     margin: 0;
     padding: 0;
     background-size: cover;
@@ -20,7 +35,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.2); 
+    background: rgba(0, 0, 0, 0.7); 
     padding: 12px 0 5px;
     position: fixed;
     top: 0;
@@ -35,7 +50,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-right: 230px;
+    margin-right: 100px;
 }
 
 .nav-links li {
@@ -58,6 +73,7 @@ body {
 .logo img{
    width: 200px;
    flex-shrink: 0;
+   margin-right: 100px;
 }
 
 .hotdog{
