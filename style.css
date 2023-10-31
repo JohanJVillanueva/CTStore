@@ -238,8 +238,8 @@ body {
     background-color: rgb(118, 121, 106);
     width: 100%;
     height: 80px;
-    position: relative;
-    bottom: 0;
+    position: static;
+    bottom: 0px;
     left: 0;
   }
   
@@ -336,24 +336,90 @@ body {
 
   /*Scrollbar*/
 
-  /* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+/*Orange Scrollbar Styling */
 
+ ::-webkit-scrollbar {
+     width: 10px;
+ }
+
+::-webkit-scrollbar-track {
+     background-color: rgba(90, 89, 89, 0.05);
+     -webkit-border-radius: 20px;
+     border-radius: 20px;
+ }
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: #FECE53;
+}
   /*Scrollbar End*/
+
+
+/*about page*/
+
+.aboutheader{
+    color: white;
+    margin: auto;
+    width: 80%;
+    margin-bottom: -20px;
+    
+}
+
+.about{
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+    margin: auto;
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.286);
+    background-color: rgba(255, 255, 255, .15);   
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    padding: 10px;
+}
+
+.about2{
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+    margin: auto;
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.286);
+    background-color: rgba(255, 255, 255, .15);   
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    padding: 10px;
+}
+
+.about2 a{
+    color: white;
+    margin-right: 20px;
+}
+
+.about2 i{
+    background-color: white;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 5px;
+}
+
+
+
+.fa-brands {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa-brands:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-brands fa-facebook{
+    background: #3B5998;
+    color: white;
+  }
